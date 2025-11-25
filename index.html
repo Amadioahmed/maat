@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeStay | Full-Service Property Management & Investment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9', // Sky blue
+                            600: '#0284c7',
+                            900: '#0c4a6e', // Deep Navy
+                        },
+                        gold: {
+                            500: '#d97706', // Investment/Premium feel
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-gray-50">
+
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-brand-900"><i class="fa-solid fa-house-chimney text-brand-500"></i> PrimeStay</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="hover:text-brand-500 transition">Services</a>
+                    <a href="#design" class="hover:text-brand-500 transition">Design & Fund</a>
+                    <a href="#invest" class="hover:text-brand-500 transition">Invest</a>
+                    <a href="#contact" class="px-4 py-2 bg-brand-600 text-white rounded-lg hover:bg-brand-700 transition">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-brand-900 h-screen flex items-center justify-center text-center px-4">
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Luxury Apartment" class="w-full h-full object-cover opacity-30">
+        </div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">
+                Unlock the True Potential of Your <span class="text-brand-500">Property</span>
+            </h1>
+            <p class="text-xl text-gray-200 mb-8">
+                From Listing Optimization and Design Funding to Complete Property Management. We serve Owners, Investors, and Managers.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="px-8 py-3 bg-brand-500 text-white font-bold rounded-lg hover:bg-brand-400 transition">I'm a Property Owner</a>
+                <a href="#invest" class="px-8 py-3 bg-white text-brand-900 font-bold rounded-lg hover:bg-gray-100 transition">I'm an Investor</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-brand-900">Comprehensive Management</h2>
+                <p class="mt-4 text-gray-500">We handle the headaches so you can enjoy the passive income.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 border border-gray-100 rounded-xl shadow-lg hover:shadow-xl transition bg-white">
+                    <div class="w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center mb-4 text-brand-600">
+                        <i class="fa-solid fa-hand-holding-dollar text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Co-Hosting & Management</h3>
+                    <p class="text-gray-600">Full-service property management and co-hosting. We act as the primary point of contact for your guests.</p>
+                </div>
+
+                <div class="p-6 border border-gray-100 rounded-xl shadow-lg hover:shadow-xl transition bg-white">
+                    <div class="w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center mb-4 text-brand-600">
+                        <i class="fa-solid fa-camera text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Listing & Photography</h3>
+                    <p class="text-gray-600">Professional Airbnb photography and listing optimization across all major channels to maximize visibility.</p>
+                </div>
+
+                <div class="p-6 border border-gray-100 rounded-xl shadow-lg hover:shadow-xl transition bg-white">
+                    <div class="w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center mb-4 text-brand-600">
+                        <i class="fa-solid fa-broom text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">5-Star Cleaning</h3>
+                    <p class="text-gray-600">Reliable cleaning to Airbnb standards, laundry service, pest control, and rigorous maintenance checks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="design" class="py-20 bg-brand-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    [attachment_0](attachment)
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Interior Design" class="rounded-lg shadow-2xl">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-brand-900 mb-6">Re-Design, Furnish & Fund</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        An outdated apartment loses money. We transform properties into trendy, high-yield listings.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Trendy Decoration:</strong> Full interior design services tailored for short-term rental appeal.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-green-500 mt-1 mr-3"></i>
+                            <span><strong>Consulting:</strong> Expert advice on how to optimize your space for guests.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check text-gold-500 mt-1 mr-3"></i>
+                            <span class="bg-yellow-100 px-2 rounded"><strong>Funding Assistance:</strong> Get funded to furnish or re-design your apartment with no upfront cash flow stress.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="invest" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gold-500">Investment Opportunities</h2>
+                <p class="mt-4 text-gray-400">Data-driven decisions for potential investors and property owners.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <i class="fa-solid fa-chart-line text-4xl text-brand-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Research & Analysis</h3>
+                    <p class="text-gray-400">We estimate property potential using advanced market data to predict occupancy rates and ROI.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <i class="fa-solid fa-building text-4xl text-brand-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Rent & Resale</h3>
+                    <p class="text-gray-400">Access exclusive opportunities to invest in high-performing Airbnb properties for rent or resale.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <i class="fa-solid fa-magnifying-glass-dollar text-4xl text-brand-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Potential Estimation</h3>
+                    <p class="text-gray-400">Don't buy blind. We analyze the specific neighborhood and street to ensure profitability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-brand-900 mb-8">Ready to Optimize Your Property?</h2>
+            <div class="bg-gray-50 p-8 rounded-xl shadow-lg text-left">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">I am a...</label>
+                        <select class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 border">
+                            <option>Property Owner looking for Management</option>
+                            <option>Investor looking for Opportunities</option>
+                            <option>Individual needing Funding/Design</option>
+                        </select>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 border" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 border" placeholder="you@example.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 border" placeholder="Tell us about your property or investment goals..."></textarea>
+                    </div>
+                    <button type="button" class="w-full bg-brand-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-brand-700 transition">
+                        Submit Inquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2023 PrimeStay Property Management. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
